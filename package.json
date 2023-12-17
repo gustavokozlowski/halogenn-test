@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev && sass --watch --update --style=expanded styles/scss:styles/css",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:scss": "sass styles/scss -o styles/css"
   },
   "dependencies": {
     "next": "14.0.4",

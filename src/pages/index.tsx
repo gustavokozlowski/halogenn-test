@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <h1> hellow putos </h1>
+     <h1>Safada</h1>
     </>
   );
 }
