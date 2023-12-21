@@ -26,7 +26,7 @@ export default function Header() {
       <div className={styles.content}>
         <nav>
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="logo da empresa"
             width={170}
             height={40}
@@ -35,9 +35,7 @@ export default function Header() {
             <li>Início</li>
             <div id={styles.dropdown}>
               <li onClick={handleDropdown}>Produtos</li>
-              <div className={styles[`dropdown-content-${isOpen}`]}>
-          
-              </div>
+              <div className={styles[`dropdown-content-${isOpen}`]}></div>
             </div>
             <li>Laudos</li>
             <li>Sobre nós</li>

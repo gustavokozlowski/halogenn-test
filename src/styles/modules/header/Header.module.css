@@ -1,8 +1,8 @@
 .container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(49, 51, 82);
-  height: 100px;
+  background-color: rgb(50, 51, 82);
+  height: 150px;
   align-items: center;
   justify-content: center;
   text-align: center;
