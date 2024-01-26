@@ -33,29 +33,49 @@
         font-weight: 500;
         font-size: 16px;
         cursor: pointer;
+        transition: 300ms linear;
+        &:hover {
+          color: rgba(132, 196, 234, 1);
+          cursor: pointer;
+        }
       }
     }
   }
   > button {
-    width: 132px;
+    width: 150px;
     height: 50px;
     background: rgba(255, 255, 255, 0.09);
     color: #fff;
     outline: none;
     border: none;
     padding: 12px, 18px, 12px, 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
     border-radius: 7px;
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
+    transition: 250ms linear;
+    &:hover {
+      background-color: rgba(245, 100, 61, 1);
+      cursor: pointer;
+    }
   }
 }
-
 
 #dropdown {
   // background-color: antiquewhite;
   cursor: pointer;
   display: flex;
+  li {
+    transition: 400ms linear;
+  }
+  &:hover li {
+    color: rgba(132, 196, 234, 1);
+    cursor: pointer;
+  }
 }
 
 .dropdown-content-disable {
@@ -82,7 +102,6 @@
     float: none;
     display: block;
   }
-  // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 // .menu {
@@ -117,7 +136,6 @@
 // .item div {
 
 //   background-color: bisque;
-
 
 //   > ul {
 //     display: grid;

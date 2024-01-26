@@ -17,11 +17,16 @@
 
 .block {
   display: flex;
+  align-items: end;
   background-color: $background-primary;
   width: 100vw;
   height: 30vh;
+  padding-left: 2.5rem;
 }
-
+#label {
+  width: 160px;
+  height: 200px;
+}
 .menu {
   width: 70vw;
   height: 40vh;

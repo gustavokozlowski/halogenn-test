@@ -17,7 +17,6 @@ export default function Header() {
         break;
       default:
         return console.table(isOpen);
-      // break;
     }
   }
 
@@ -43,7 +42,16 @@ export default function Header() {
             <li>Contato</li>
           </ul>
         </nav>
-        <button>Orçamento</button>
+        <button>
+          <Image
+            className={styles["icon-menu-alternative"]}
+            src="/menu/Vector-5.svg"
+            alt="okay"
+            width={20}
+            height={50}
+          />
+          Orçamento
+        </button>
       </div>
     </header>
   );

@@ -7,14 +7,22 @@ export default function Home() {
     <div className={styles["container-home"]}>
       <Header />
       <main className={styles["content-home"]}>
-        <div className={styles["block"]}></div>
+        <div className={styles["block"]}>
+          <Image
+            id={styles["label"]}
+            src="/menu/Component 4.svg"
+            alt="okay"
+            width={0}
+            height={0}
+          />
+        </div>
         <div className={styles["menu"]}>
           <div className={styles["item"]}>
             <header>
               <h3>produtos</h3>
             </header>
             <div className={styles["item-content"]}>
-            <div>
+              <div>
                 <Image
                   className={styles["icon-menu-alternative"]}
                   src="/menu/Vector-3.svg"
@@ -32,7 +40,7 @@ export default function Home() {
               <h3>químicos</h3>
             </header>
             <div className={styles["item-content"]}>
-            <div>
+              <div>
                 <Image
                   className={styles["icon-menu"]}
                   src="/menu/Vector.svg"
@@ -57,7 +65,7 @@ export default function Home() {
               <h3>laboratórios</h3>
             </header>
             <div className={styles["item-content"]}>
-            <div>
+              <div>
                 <Image
                   className={styles["icon-menu-alternative"]}
                   src="/menu/Vector-2.svg"
@@ -71,6 +79,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <h1>Produtos</h1>
+        <h1>Produtos</h1>
+        <h1>Produtos</h1>
+        <h1>Produtos</h1>
       </main>
     </div>
   );
