@@ -12,7 +12,6 @@
   display: flex;
   align-items: center;
   height: 100vh;
-  width: 100vw;
 }
 
 .block {
@@ -20,7 +19,7 @@
   align-items: end;
   background-color: $background-primary;
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
   padding-left: 2.5rem;
 }
 #label {
@@ -33,7 +32,7 @@
   position: absolute;
   background-color: rgba(249, 240, 238, 1);
   border-radius: 6px;
-  top: 150px;
+  top: 120px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -44,6 +43,7 @@
   justify-content: space-between;
   align-items: center;
   border: 1px solid #fff;
+  transition: 400ms;
   > header {
     height: 20%;
     width: 70%;
@@ -112,4 +112,17 @@
   height: 20px;
   align-self: end;
   width: 10px;
+}
+
+#products {
+  background-color: cornflowerblue;
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  > h1 {
+    color: $background-primary;
+  }
 }

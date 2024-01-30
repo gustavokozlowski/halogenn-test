@@ -1,10 +1,12 @@
 @import "../../variables/colors.module.scss";
 
 .container {
+  padding: 2rem;
+
   display: flex;
   flex-direction: column;
   background-color: $background-primary;
-  height: 150px;
+  height: 200px;
   align-items: center;
   justify-content: center;
   text-align: center;

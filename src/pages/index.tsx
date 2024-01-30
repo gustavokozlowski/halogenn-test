@@ -1,4 +1,5 @@
-import Header from "@/components/header";
+import Header from "@/components/header/header";
+import Item from "@/components/item/item";
 import styles from "@/styles/modules/home/Home.module.scss";
 import Image from "next/image";
 // PAREAMOS NA PARTE DE EDITAR O MENU
@@ -79,10 +80,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <h1>Produtos</h1>
-        <h1>Produtos</h1>
-        <h1>Produtos</h1>
-        <h1>Produtos</h1>
+        <section id={styles["products"]}>
+          <h1>Produtos</h1>
+          <div>
+            <Item />
+          </div>
+          
+        </section>
       </main>
     </div>
   );
