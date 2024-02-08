@@ -25,6 +25,7 @@ export default function Header() {
       <div className={styles.content}>
         <nav>
           <Image
+          //ADD WIDTH & HEIGHT NO CSS
             src="/logo.svg"
             alt="logo da empresa"
             width={170}

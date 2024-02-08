@@ -1,6 +1,46 @@
 .item-container {
-  background-color: darkorange;
-  width: 300px;
+  background-color: #fff;
+  width: 350px;
   height: 250px;
   border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+}
+.item-content > div {
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.item-content > div > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-image {
+  width: 350px;
+  height: 150px;
+}
+
+#item-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(245, 100, 61, 0.8);
+}
+
+#item-note {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(161, 161, 161);
+}
+
+#item-price {
+  color: rgba(245, 100, 61, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 5px;
 }/*# sourceMappingURL=Item.module.css.map */

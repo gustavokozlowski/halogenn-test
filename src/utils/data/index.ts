@@ -3,24 +3,24 @@ import { Product } from "@/types/product";
 export const data: Product[] = [
   {
     id:1,
-    image: "https://drive.google.com/file/d/14OXS3qxGOXyJhJpNUuXsA0EF8GTwu15o/view?usp=drive_link",
-    name:"Abuble abubleeeeee",
+    image: "Frame 1.png",
+    name:"Conjunto de vidros",
     price: 499.99,
-    stars: 4,
+    note: 4,
   },
   {
     id:2,
-    image: "https://drive.google.com/file/d/1WZoVOU-gxpgjVJSjtpeUQDWnPHNSZrG1/view?usp=drive_link",
-    name:"heeY BROTGHER",
+    image: "Frame 3.png",
+    name:"Cilindro de gás",
     price: 349.99,
-    stars: 5,
+    note: 5,
   },
   {
     id:3,
-    image: "https://drive.google.com/file/d/1NAb4MG_7jbap4wbr8PM3iR-l5R4sR6YE/view?usp=drive_link",
-    name:"QUEM?",
+    image: "Frame 100.png",
+    name:"Material químico",
     price: 199.99,
-    stars: 4.5,
+    note: 4.5,
   },
 
 ];
