@@ -1,0 +1,13 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(50, 51, 82);
+  height: 7vh;
+  color: #fff;
+}
+
+.footer-content > h2 {
+  font-weight: 400;
+  font-size: 1rem;
+}/*# sourceMappingURL=footer.module.css.map */

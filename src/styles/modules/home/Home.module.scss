@@ -1,9 +1,7 @@
 @import "../../variables/colors.module.scss";
-
+//REFATORAR O CSS PARA TER UMA DIV SEPARANDO O MENU-BLOCK DAS SESSIONS[ PRODUTOS E SOBRE NÓS ]!
 .container-home {
   display: flex;
-  height: 100vh;
-  
   flex-direction: column;
 }
 
@@ -11,8 +9,7 @@
   flex-direction: column;
   display: flex;
   align-items: center;
-  height: 100vh;
-  gap: 5rem;
+  // gap: 5rem;
 }
 
 .block {
@@ -33,7 +30,7 @@
   position: absolute;
   background-color: rgba(249, 240, 238, 1);
   border-radius: 6px;
-  top: 120px;
+  top: 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -66,7 +63,7 @@
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  background-color:  rgb(232, 82, 40);
+  background-color: rgb(232, 82, 40);
   border: 1px solid #fff;
   > header {
     height: 20%;
@@ -114,7 +111,7 @@
   align-self: end;
   width: 10px;
 }
-#about-us{
+#about-us {
   margin-top: 7rem;
   width: 70vw;
   height: 100vh;
@@ -135,21 +132,21 @@
     width: 70vw;
     height: 30vh;
     > ul {
-        color: #fff;
+      color: #fff;
     }
     > p {
       color: #fff;
     }
   }
-  
-
 }
 #products {
+  margin-top: 14rem;
   gap: 2rem;
   width: 70vw;
-  height: 100vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   > h1 {
     color: $background-primary;
@@ -160,10 +157,8 @@
     height: 50vh;
     width: 70vw;
     // background-color: aqua;
-     flex-direction: row;
-     display: flex;
-     justify-content: space-between;
-    
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
   }
 }
-

@@ -1,6 +1,5 @@
 .container-home {
   display: flex;
-  height: 100vh;
   flex-direction: column;
 }
 
@@ -8,8 +7,6 @@
   flex-direction: column;
   display: flex;
   align-items: center;
-  height: 100vh;
-  gap: 5rem;
 }
 
 .block {
@@ -32,7 +29,7 @@
   position: absolute;
   background-color: rgb(249, 240, 238);
   border-radius: 6px;
-  top: 120px;
+  top: 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -148,11 +145,13 @@
 }
 
 #products {
+  margin-top: 14rem;
   gap: 2rem;
   width: 70vw;
-  height: 100vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 #products > h1 {
