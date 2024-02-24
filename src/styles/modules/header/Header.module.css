@@ -1,9 +1,8 @@
 .container {
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   background-color: rgb(50, 51, 82);
-  height: 200px;
+  height: 100px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -12,8 +11,7 @@
 
 .content {
   display: flex;
-  height: 50%;
-  width: 80%;
+  width: 95%;
   gap: 2rem;
   justify-content: space-around;
   align-items: center;
@@ -59,6 +57,11 @@
 .content > button:hover {
   background-color: rgb(245, 100, 61);
   cursor: pointer;
+}
+
+#logo {
+  width: 170px;
+  height: 40px;
 }
 
 #dropdown {

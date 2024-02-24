@@ -25,11 +25,12 @@ export default function Header() {
       <div className={styles.content}>
         <nav>
           <Image
-          //ADD WIDTH & HEIGHT NO CSS
+            //ADD WIDTH & HEIGHT NO CSS
+            id={styles.logo}
             src="/logo.svg"
             alt="logo da empresa"
-            width={170}
-            height={40}
+            width={0}
+            height={0}
           />
           <ul>
             <li>Início</li>
@@ -37,9 +38,7 @@ export default function Header() {
               <li onClick={handleDropdown}>Produtos</li>
               <div className={styles[`dropdown-content-${isOpen}`]}></div>
             </div>
-            <li>Laudos</li>
             <li>Sobre nós</li>
-            <li>Certificações</li>
             <li>Contato</li>
           </ul>
         </nav>

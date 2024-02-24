@@ -21,6 +21,7 @@
 #label {
   width: 160px;
   height: 200px;
+  z-index: 100;
 }
 
 .menu {
@@ -29,7 +30,7 @@
   position: absolute;
   background-color: rgb(249, 240, 238);
   border-radius: 6px;
-  top: 200px;
+  top: 150px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -65,6 +66,7 @@
   color: #fff;
   background-color: rgb(232, 82, 40);
   border: 1px solid #fff;
+  transition: 400ms;
 }
 .item-alternative > header {
   height: 20%;
@@ -78,7 +80,7 @@
 }
 .item-alternative:hover {
   cursor: pointer;
-  background-color: rgb(232, 82, 40);
+  background-color: rgb(236, 75, 30);
 }
 
 .item-content {
