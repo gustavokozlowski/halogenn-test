@@ -4,7 +4,6 @@ import styles from "@/styles/modules/home/Home.module.scss";
 import Image from "next/image";
 import { data } from "@/utils/data";
 
-// PAREAMOS NA PARTE DE EDITAR O MENU
 export default function Content() {
   return (
     <div className={styles["container-home"]}>
@@ -127,6 +126,35 @@ export default function Content() {
                 </p>
               </li>
             </ul>
+          </div>
+        </section>
+        {/* PARAMOS AQUI NA CRIAÇÃO DA SECTION CONTATO Adicionar as redes sociais */}
+        <section id={styles["contact"]}>
+          <h1>Contato</h1>
+          <div>
+            <Image
+              className={styles["social-media"]}
+              src="/social/icon-whatsapp.png"
+              alt="okay"
+              width={50}
+              height={50}
+            />
+
+            <Image
+              className={styles["social-media"]}
+              src="/social/icon-linkedin2.png"
+              alt="okay"
+              width={50}
+              height={50}
+            />
+
+            <Image
+              className={styles["social-media"]}
+              src="/social/icon-instagram.png"
+              alt="okay"
+              width={50}
+              height={50}
+            />
           </div>
         </section>
       </main>
