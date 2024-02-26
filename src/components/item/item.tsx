@@ -1,4 +1,5 @@
 import styles from "@/styles/modules/item/Item.module.scss";
+import { Rating } from "react-simple-star-rating";
 import { Product } from "@/types/product";
 
 export default function Item(product: Product) {
@@ -13,7 +14,15 @@ export default function Item(product: Product) {
         <div>
           <h2 id={styles["item-name"]}>{product.name}</h2>
           <span>
-            <p id={styles["item-note"]}>Nota: {product.note}</p>
+            <p id={styles["item-note"]}>
+              Nota:{" "}
+              <Rating
+                initialValue={product.note}
+                readonly
+                size={20}
+                allowFraction
+              />{" "}
+            </p>
             <p id={styles["item-price"]}>R$: {product.price}</p>
           </span>
         </div>
