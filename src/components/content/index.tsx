@@ -1,8 +1,8 @@
 "use-client";
 
-import Header from "@/components/header/header";
-import Item from "@/components/item/item";
-import styles from "@/styles/modules/home/home.module.scss";
+import Header from "@/components/header/index";
+import Item from "@/components/item/index";
+import styles from "@/styles/modules/home/Home.module.scss";
 import Image from "next/image";
 import { data } from "@/utils/data";
 

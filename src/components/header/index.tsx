@@ -3,7 +3,7 @@
 import Image from "next/image";
 import styles from "@/styles/modules/header/Header.module.scss";
 import { useState, useEffect } from "react";
-import MenuBars from "../menu-mobile";
+import MenuBars from "../menu-mobile/index";
 
 // DESFAZER CÓDIGO COMPLEXO E FAZER RESPONSIVIDADE COM CSS UTILIZANDO A PROPRIEDADE DISPLAY: HIDDEN;
 
