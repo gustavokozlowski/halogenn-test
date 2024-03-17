@@ -1,3 +1,5 @@
+'use-client'
+
 import styles from "@/styles/modules/footer/Footer.module.scss";
 
 export default function Footer() {

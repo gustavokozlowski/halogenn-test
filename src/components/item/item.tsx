@@ -1,3 +1,5 @@
+'use-client'
+
 import styles from "@/styles/modules/item/Item.module.scss";
 import { Rating } from "react-simple-star-rating";
 import { Product } from "@/types/product";
@@ -21,6 +23,7 @@ export default function Item(product: Product) {
                 readonly
                 size={20}
                 allowFraction
+                transition={true}
               />{" "}
             </p>
             <p id={styles["item-price"]}>R$: {product.price}</p>

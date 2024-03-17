@@ -1,0 +1,19 @@
+@mixin display($breakpoint) {
+  @if $breakpoint == "mobile" {
+    @media (min-width: 375px) and (max-width: 575px) {
+      @content;
+    }
+  } @else if $breakpoint == "tablet" {
+    @media (min-width: 575px) and (max-width: 750px) {
+      @content;
+    }
+  } @else if $breakpoint == "notebook" {
+    @media (min-width: 750px) and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $breakpoint == "desktop" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}

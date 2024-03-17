@@ -1,6 +1,8 @@
+"use-client";
+
 import Header from "@/components/header/header";
 import Item from "@/components/item/item";
-import styles from "@/styles/modules/home/Home.module.scss";
+import styles from "@/styles/modules/home/home.module.scss";
 import Image from "next/image";
 import { data } from "@/utils/data";
 
@@ -12,10 +14,11 @@ export default function Content() {
         <div className={styles["block"]}>
           <Image
             id={styles["label"]}
-            src="/menu/Component 4.svg"
+            src="/menu/component 4.svg"
             alt="okay"
             width={0}
             height={0}
+            priority={true}
           />
         </div>
         <div className={styles["menu"]}>
@@ -31,6 +34,7 @@ export default function Content() {
                   alt="okay"
                   width={0}
                   height={0}
+                  priority={true}
                 />
               </div>
               <p>Vidrarias e</p>
@@ -74,6 +78,7 @@ export default function Content() {
                   alt="okay"
                   width={0}
                   height={0}
+                  priority={true}
                 />
               </div>
               <p>Ferramentas</p>

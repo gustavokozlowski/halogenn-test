@@ -1,46 +1,59 @@
+'use-client';
+
 import Image from "next/image";
 import styles from "@/styles/modules/header/Header.module.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import MenuBars from "../menu-mobile";
+
+// DESFAZER CÓDIGO COMPLEXO E FAZER RESPONSIVIDADE COM CSS UTILIZANDO A PROPRIEDADE DISPLAY: HIDDEN;
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState<String>("disable");
-
-  function handleDropdown(): void {
-    switch (isOpen) {
-      case "active":
-        setIsOpen("disable");
-        console.table(isOpen);
-        break;
-      case "disable":
-        setIsOpen("active");
-        console.table(isOpen);
-        break;
-      default:
-        return console.table(isOpen);
+  const [mobile, setMobile] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(() => {
+    if (typeof window === "undefined") {
+      return { width: 0 };
     }
-  }
+    return {
+      width: window.innerWidth,
+    };
+  });
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth({
+        width: window.innerWidth,
+      });
+      if (screenWidth.width < 575) {
+        setMobile(true);
+        return console.log(`Mudou: ${mobile}`);
+      } else return setMobile(false);
+    };
+    window.addEventListener("resize", changeWidth);
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, [screenWidth, mobile]);
 
   return (
-    <header className={styles.container}>
-      <div className={styles.content}>
+    <header className={styles["container"]}>
+      <div className={styles["content"]}>
+        <Image
+          id={styles["logo"]}
+          src="/logo.svg"
+          alt="logo da empresa"
+          width={0}
+          height={0}
+        />
         <nav>
-          <Image
-            //ADD WIDTH & HEIGHT NO CSS
-            id={styles.logo}
-            src="/logo.svg"
-            alt="logo da empresa"
-            width={0}
-            height={0}
-          />
-          <ul>
-            <li>Início</li>
-            <div id={styles.dropdown}>
-              <li onClick={handleDropdown}>Produtos</li>
-              <div className={styles[`dropdown-content-${isOpen}`]}></div>
-            </div>
-            <li>Sobre nós</li>
-            <li>Contato</li>
-          </ul>
+          {mobile === false ? (
+            <ul>
+              <li>Início</li>
+              <li>Produtos</li>
+              <li>Sobre nós</li>
+              <li>Contato</li>
+            </ul>
+          ) : (
+            <MenuBars />
+          )}
         </nav>
         <button>
           <Image

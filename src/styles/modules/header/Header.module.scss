@@ -1,5 +1,6 @@
 @import "../../variables/colors.module.scss";
-
+@import "../../mixins/breakpoints.scss";
+//PARAMOS NA IMPLEMENTAÇ~´AO DA RESPONSIVIDADE DO HEADER
 .container {
   display: flex;
   flex-direction: column;
@@ -9,15 +10,20 @@
   justify-content: center;
   text-align: center;
   color: #fff;
+  display: flex;
+  @include display("mobile") {
+    background-color: orange;
+    height: 100px;
+  }
 }
 
 .content {
   display: flex;
-  //   background-color: orange;
   width: 95%;
   gap: 2rem;
   justify-content: space-around;
   align-items: center;
+
   > nav {
     display: flex;
     justify-content: center;
@@ -62,96 +68,60 @@
       cursor: pointer;
     }
   }
+
+  @include display("mobile") {
+    display: flex;
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    > nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        display: flex;
+        gap: 0;
+        list-style: none;
+
+        > li {
+          font-weight: 500;
+          font-size: 16px;
+          cursor: pointer;
+          transition: 300ms linear;
+          &:hover {
+            color: rgba(132, 196, 234, 1);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    > button {
+      width: 150px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.09);
+      color: #fff;
+      outline: none;
+      border: none;
+      padding: 12px, 18px, 12px, 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7px;
+      border-radius: 7px;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 250ms linear;
+      &:hover {
+        background-color: rgba(245, 100, 61, 1);
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 #logo {
   width: 170px;
   height: 40px;
 }
-
-#dropdown {
-  // background-color: antiquewhite;
-  cursor: pointer;
-  display: flex;
-  li {
-    transition: 400ms linear;
-  }
-  &:hover li {
-    color: rgba(132, 196, 234, 1);
-    cursor: pointer;
-  }
-}
-
-.dropdown-content-disable {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content-active {
-  background-color: hotpink;
-  top: 85px;
-  left: 0;
-  right: 0;
-  display: flex;
-  height: 40%;
-  width: 100vw;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  min-width: 160px;
-  p {
-    float: none;
-    display: block;
-  }
-}
-
-// .menu {
-//   display: flex;
-//   height: 40vh;
-//   width: 80%;
-//   background-color: #483d8b;
-//   align-items: center;
-// }
-
-// .menu-items {
-//   background-color: aquamarine;
-//   align-items: center;
-//   display: flex;
-//   gap: 1rem;
-// }
-
-// .item {
-//   display: flex;
-//   border: 2px solid white;
-//   width: 100%;
-//   height: 100%;
-//   // background-color: #483;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: flex-start;
-//   > p {
-//     background-color: crimson;
-//   }
-// }
-
-// .item div {
-
-//   background-color: bisque;
-
-//   > ul {
-//     display: grid;
-//     background-color: coral;
-//     grid-template-columns: auto auto;
-//     border: 1px solid #fff;
-
-//     > li {
-//       width: 100%;
-//       height: 100%;
-//       background-color: #483;
-//       border: 1px solid #fff;
-//     }
-//   }
-// }

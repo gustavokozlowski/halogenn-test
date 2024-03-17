@@ -7,6 +7,13 @@
   justify-content: center;
   text-align: center;
   color: #fff;
+  display: flex;
+}
+@media (min-width: 375px) and (max-width: 575px) {
+  .container {
+    background-color: orange;
+    height: 100px;
+  }
 }
 
 .content {
@@ -58,45 +65,59 @@
   background-color: rgb(245, 100, 61);
   cursor: pointer;
 }
+@media (min-width: 375px) and (max-width: 575px) {
+  .content {
+    display: flex;
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content > nav ul {
+    display: flex;
+    gap: 0;
+    list-style: none;
+  }
+  .content > nav ul > li {
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 300ms linear;
+  }
+  .content > nav ul > li:hover {
+    color: rgb(132, 196, 234);
+    cursor: pointer;
+  }
+  .content > button {
+    width: 150px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.09);
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 12px, 18px, 12px, 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 250ms linear;
+  }
+  .content > button:hover {
+    background-color: rgb(245, 100, 61);
+    cursor: pointer;
+  }
+}
 
 #logo {
   width: 170px;
   height: 40px;
-}
-
-#dropdown {
-  cursor: pointer;
-  display: flex;
-}
-#dropdown li {
-  transition: 400ms linear;
-}
-#dropdown:hover li {
-  color: rgb(132, 196, 234);
-  cursor: pointer;
-}
-
-.dropdown-content-disable {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdown-content-active {
-  background-color: hotpink;
-  top: 85px;
-  left: 0;
-  right: 0;
-  display: flex;
-  height: 40%;
-  width: 100vw;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  min-width: 160px;
-}
-.dropdown-content-active p {
-  float: none;
-  display: block;
 }/*# sourceMappingURL=Header.module.css.map */
